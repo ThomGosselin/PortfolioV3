@@ -39,22 +39,21 @@ h1::before{
 
 h1::after {
     width: 0.125em;
-    background: white;
+    background: #fffafb;
     animation: typewriter var(--typewriterSpeed)
         steps(var(--typewriterCharacters)) 1s forwards,
       blink 750ms steps(var(--typewriterCharacters)) infinite;
   }
 
 
-.subtitle{
-    color: hsl(0 0% 0% / 0.7);
+  .subtitle {
+    color: #fffafb;
     font-size: 2rem;
     font-weight: 400;
     opacity: 0;
     transform: translateY(3rem);
-    animation: fadeInUp 2s ease calc(var(--typewritterSpeed) + 2s)
-    forwards;
-}
+    animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + 2s) forwards;
+  }
 @keyframes typewriter {
     to {
       left: 100%;
