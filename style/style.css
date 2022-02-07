@@ -5,7 +5,8 @@
 }
 
 body{
-    margin: 0;font-family: "Source Sans Pro",sans-serif;
+    margin: 0;
+    font-family: "Source Sans Pro",sans-serif;
     min-height:100vh;
     display: grid;
     place-content: center;
@@ -13,7 +14,9 @@ body{
     background: var(--bg-color);
 }
 
-h1{
+/* Section of code for the index page */
+
+.indexText{
     font-size: clamp(1rem, 3vw + 1rem, 4rem);
     position: relative;
     font-family: "Source Sans Pro",monospace;
@@ -21,8 +24,8 @@ h1{
     color: #fffafb;
 }
 
-h1::before, 
-h1::after{
+.indexText::before, 
+.indexText::after{
     content: "";
     position: absolute;
     top: 0;
@@ -31,15 +34,15 @@ h1::after{
     left: 0;
 }
 
-h1::before{
+.indexText::before{
     background: var(--bg-color);
     animation: typewriter var(--typewriterSpeed)
       steps(var(--typewriterCharacters)) 1s forwards;
 }
 
-h1::after {
+.indexText::after {
     width: 0.125em;
-    background: white;
+    background: #fffafb;
     animation: typewriter var(--typewriterSpeed)
         steps(var(--typewriterCharacters)) 1s forwards,
       blink 750ms steps(var(--typewriterCharacters)) infinite;
@@ -47,13 +50,12 @@ h1::after {
 
 
 .subtitle{
-    color: hsl(0 0% 0% / 0.7);
+    color: #fffafb;
     font-size: 2rem;
     font-weight: 400;
     opacity: 0;
     transform: translateY(3rem);
-    animation: fadeInUp 2s ease calc(var(--typewritterSpeed) + 2s)
-    forwards;
+    animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + 2s) forwards;
 }
 @keyframes typewriter {
     to {
