@@ -319,7 +319,7 @@ section:first-of-type{
   display: flex;
   font-family: 'Poppins', sans-serif;
   gap: 20px;
-  height: 25vh;
+  height: 60vh;
   justify-content: center;
 }
 section:last-of-type{
