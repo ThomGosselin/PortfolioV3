@@ -280,6 +280,11 @@ section:first-of-type{
   height: 25vh;
   justify-content: center;
 }
+section:last-of-type{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
 .showcase {
   height: 100vh;
   position: relative;
