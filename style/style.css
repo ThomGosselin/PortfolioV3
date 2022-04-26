@@ -2,43 +2,43 @@
   --bg-color: #000105;
   --black: #000;
   --typewriterSpeed: 6s;
-  --typewriterCharacters: 24;
+  --typewriterCharacters: 22;
 }
 
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0; 
 }
 body{
+  background: var(--bg-color);
+  display: grid;
   margin: 0;font-family: "Source Sans Pro",sans-serif;
   min-height:100vh;
-  display: grid;
   place-content: center;
   text-align: center;
-  background: var(--black);
 }
 section:first-of-type{
+  align-items: center;
+  background-color: var(--black);
+  display: flex;
   font-family: 'Poppins', sans-serif;
-    background-color: var(--black);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-    height: 25vh;
+  gap: 20px;
+  height: 25vh;
+  justify-content: center;
 }
 .showcase {
-  width: 100%;
   height: 100vh;
   position: relative;
+  width: 100%;
 }
 .showcase video {
-  width: 100%;
   height: 100%;
-  position: absolute;
-  top: 0;
   left: 0;
   object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 99%;
 }
 .title {
   background-color: var(--black);
@@ -50,35 +50,35 @@ section:first-of-type{
 }
 
 h2{
+  color: #fffafb;
+  font-family: "Source Sans Pro",monospace;
   font-size: clamp(1rem, 3vw + 1rem, 4rem);
   position: relative;
-  font-family: "Source Sans Pro",monospace;
   width: max-content;
-  color: #fffafb;
 }
 
 h2::before, 
 h2::after{
+  bottom: 0;
   content: "";
+  left: 0;
   position: absolute;
   top: 0;
   right: 0;
-  bottom: 0;
-  left: 0;
 }
 
 h2::before{
-  background: var(--bg-color);
   animation: typewriter var(--typewriterSpeed)
     steps(var(--typewriterCharacters)) 1s forwards;
+  background: var(--bg-color);
 }
 
 h2::after {
-  width: 0.125em;
-  background: #fffafb;
   animation: typewriter var(--typewriterSpeed)
       steps(var(--typewriterCharacters)) 1s forwards,
     blink 750ms steps(var(--typewriterCharacters)) infinite;
+  background: #fffafb;
+  width: 0.125em;
 }
 
 @keyframes typewriter {
