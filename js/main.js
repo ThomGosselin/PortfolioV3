@@ -1,12 +1,3 @@
-const cursor = document.querySelector(".cursor-inner");
-        const cursor2 = document.querySelector(".cursor-outer");
-        document.addEventListener("mousemove", e=>{
-            cursor.style.top = e.pageY + "px";
-            cursor.style.left = e.pageX + "px";
- 
-            cursor2.style.top = e.pageY + "px";
-            cursor2.style.left = e.pageX + "px";
-        })
 var app = function () {
     var body = undefined;
     var menu = undefined;
@@ -27,3 +18,9 @@ var app = function () {
     };
     init();
 }();
+
+var cursor = document.querySelector(".cursor");
+    var cursor2 = document.querySelector(".cursor2");
+    document.addEventListener("mousemove",function(e){
+      cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+    });
