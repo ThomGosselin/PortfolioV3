@@ -142,7 +142,7 @@ body{
 	position: fixed;
 	visibility: hidden;
 	top: 90px;
-  	xleft: 50px;
+  	left: 50px;
 	width: 320px;
 	text-align: left;
 }
