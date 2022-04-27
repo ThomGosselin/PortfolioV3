@@ -345,6 +345,7 @@ section:last-of-type{
   font-size: 100px;
   height: 100%;
   mix-blend-mode: multiply;
+  pointer-events: none;
   width: 100%;
 }
 
