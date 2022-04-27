@@ -142,8 +142,8 @@ body{
 	position: fixed;
 	visibility: hidden;
 	top: 90px;
-  left: 50px;
-	width: 280px;
+  	xleft: 50px;
+	width: 320px;
 	text-align: left;
 }
 .nav__list {
@@ -318,7 +318,7 @@ section:first-of-type{
   display: flex;
   font-family: 'Poppins', sans-serif;
   gap: 20px;
-  height: vh;
+  height: 60vh;
   justify-content: center;
 }
 section:last-of-type{
