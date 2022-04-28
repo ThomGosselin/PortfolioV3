@@ -356,7 +356,6 @@ section:last-of-type{
   pointer-events: none;
   width: 100%;
 }
-
 h2{
   color: #fffafb;
   font-family: "Source Sans Pro",monospace;
@@ -364,7 +363,6 @@ h2{
   position: relative;
   width: max-content;
 }
-
 h2::before, 
 h2::after{
   bottom: 0;
@@ -374,13 +372,11 @@ h2::after{
   top: 0;
   right: 0;
 }
-
 h2::before{
   animation: typewriter var(--typewriterSpeed)
     steps(var(--typewriterCharacters)) 1s forwards;
   background: var(--bg-color);
 }
-
 h2::after {
   animation: typewriter var(--typewriterSpeed)
       steps(var(--typewriterCharacters)) 1s forwards,
@@ -413,7 +409,6 @@ h2#realisationTitle{
 	cursor: none;
 	margin: 100px 15px 0 15px;
   }
-  
   .card:hover {
 	color: rgb(88 199 250 / 100%);
 	transition: color 1s;
@@ -422,8 +417,6 @@ h2#realisationTitle{
 	animation: none;
 	opacity: 0;
   }
-  
-  
   .card::before {
 	content: "";
 	width: 104%;
@@ -438,7 +431,6 @@ h2#realisationTitle{
 	  left: -2%;
 	  animation: spin 2.5s linear infinite;
   }
-  
   .card::after {
 	position: absolute;
 	content: "";
@@ -464,13 +456,11 @@ h2#realisationTitle{
     left: 100%;
   }
 }
-
 @keyframes blink {
   to {
     background: transparent;
   }
 }
-
 @keyframes fadeInUp {
   to {
     opacity: 1;
