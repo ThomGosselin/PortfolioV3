@@ -1,3 +1,9 @@
+@property --rotate {
+	syntax: "<angle>";
+	initial-value: 132deg;
+	inherits: false;
+  }
+
 :root{
   --bg-color: #000105;
   --black: #000;
@@ -7,6 +13,8 @@
   --white: #fff;
   --typewriterSpeed: 6s;
   --typewriterCharacters: 22;
+  --card-height: 65vh;
+  --card-width: calc(var(--card-height) / 2);
 }
 
 * {
@@ -380,7 +388,74 @@ h2::after {
   background: #fffafb;
   width: 0.125em;
 }
-
+/*/Réalisation - category card section*/
+.CategoryContainer{
+	display: flex;
+	justify-content: space-evenly;
+	z-index: 100;
+}
+.card {
+	background: #191c29;
+	width: var(--card-width);
+	height: var(--card-height);
+	padding: 3px;
+	position: relative;
+	border-radius: 6px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	display: flex;
+	font-size: 1.5em;
+	color: rgb(88 199 250 / 0%);
+	cursor: none;
+	margin: 100px 15px 0 15px;
+  }
+  
+  .card:hover {
+	color: rgb(88 199 250 / 100%);
+	transition: color 1s;
+  }
+  .card:hover:before, .card:hover:after {
+	animation: none;
+	opacity: 0;
+  }
+  
+  
+  .card::before {
+	content: "";
+	width: 104%;
+	height: 102%;
+	border-radius: 8px;
+	background-image: linear-gradient(
+	  var(--rotate)
+	  , #5ddcff, #3c67e3 43%, #4e00c2);
+	  position: absolute;
+	  z-index: -1;
+	  top: -1%;
+	  left: -2%;
+	  animation: spin 2.5s linear infinite;
+  }
+  
+  .card::after {
+	position: absolute;
+	content: "";
+	top: calc(var(--card-height) / 6);
+	left: 0;
+	right: 0;
+	z-index: -1;
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+	transform: scale(0.8);
+	filter: blur(calc(var(--card-height) / 6));
+	background-image: linear-gradient(
+	  var(--rotate)
+	  , #5ddcff, #3c67e3 43%, #4e00c2);
+	  opacity: 1;
+	transition: opacity .5s;
+	animation: spin 2.5s linear infinite;
+}
+/*Animation*/
 @keyframes typewriter {
   to {
     left: 100%;
@@ -399,3 +474,11 @@ h2::after {
     transform: translateY(0);
   }
 }
+@keyframes spin {
+	0% {
+	  --rotate: 0deg;
+	}
+	100% {
+	  --rotate: 360deg;
+	}
+  }
