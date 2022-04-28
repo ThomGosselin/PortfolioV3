@@ -382,7 +382,8 @@ h2::after {
   background: #fffafb;
   width: 0.125em;
 }
-h2#realisationTitle{
+h3{
+	color: var(--white);
 	font-size: 1.5rem;
 }
 /*/Réalisation - category card section*/
