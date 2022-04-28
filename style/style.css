@@ -388,6 +388,9 @@ h2::after {
   background: #fffafb;
   width: 0.125em;
 }
+h2#realisationTitle{
+	font-size: 1.5rem;
+}
 /*/Réalisation - category card section*/
 .CategoryContainer{
 	display: flex;
@@ -400,7 +403,7 @@ h2::after {
 	height: var(--card-height);
 	padding: 3px;
 	position: relative;
-	border-radius: 6px;
+	border-radius: 5px;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
