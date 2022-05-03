@@ -468,6 +468,42 @@ h3{
 	transition: opacity .5s;
 	animation: spin 2.5s linear infinite;
 }
+/* Dark-Light Mode Btn*/
+.containerDayNightBtn {
+	position: relative;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.3s;
+  }
+  .containerDayNightBtn.black {
+	background-color: blue;
+  }
+  .containerDayNightBtn.white {
+	background-color: white;
+  }
+  
+  .icon {
+	border-radius: 30px;
+	transition: 0.3s;
+	cursor: pointer;
+	width: 200px;
+	height: 200px;
+  }
+  .containerDayNightBtn.black .icon {
+	border: white solid 2px;
+  }
+  .containerDayNightBtn.white .icon {
+	border: blue solid 2px;
+  }
+  
+  #svg-animation {
+	width: 200px;
+  }
 /*Animation*/
 @keyframes typing {
 	from {
