@@ -8,6 +8,7 @@
         <script src="js/main.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.3/lottie.min.js" integrity="sha512-e0f5QhAghpnR7F96ocZHSXHNrM1ugw32mmQJsKg02ADeVj7uxFkG5UA+HgrcTTxcPWp415lH+1l1b4nZtyqnsg=="crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <title>Thomas Gosselin -- Developpeur</title>
     </head>
 <body>
@@ -34,7 +35,12 @@
     <div class="cursor"></div>
 <div class="cursor-follower"></div>
 <h3>Bienvenue dans la section sur mes réalisations, ici vous trouverez les catégories des travaux que j'ai réaliser</h3>
-    <div class="CategoryContainer">
+<div class="containerDayLightBtn"> <!-- Section pour le dark mode switch-->
+    <div class="icon">
+      <div id='svg-animation'></div>
+    </div>
+  </div> <!-- end of it-->
+    <div class="CategoryContainer"> <!--Section pour les cartes des différentes catégories-->
         <div class="card" id="card1">
             Programmation
         </div>
@@ -47,6 +53,6 @@
         <div class="card" id="card4">
             Vidéo/Photo
         </div>
-    </div>
+    </div> <!-- end of it-->
 </body>
 </html>
