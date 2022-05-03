@@ -403,14 +403,55 @@ h3{
 	width: 104%;
 	height: 102%;
 	border-radius: 8px;
-	background-image: linear-gradient(
-	  var(--rotate)
-	  , #5ddcff, #3c67e3 43%, #4e00c2);
 	  position: absolute;
 	  z-index: -1;
 	  top: -1%;
 	  left: -2%;
 	  animation: spin 2.5s linear infinite;
+  }
+  #card1::before{
+	background-image: linear-gradient(
+		var(--rotate)
+		, #06eb25, #02490e 43%, #bdbdbd);
+  }
+  #card1::after{
+	background-image: linear-gradient(
+	  var(--rotate)
+	  , #06eb25, #02490e 43%, #bdbdbd);
+	  opacity: 1;
+  }
+  #card2::before{
+	background-image: linear-gradient(
+		var(--rotate)
+		, #06bdeb, #082da5 43%, #bdbdbd);
+  }
+  #card2::after{
+	background-image: linear-gradient(
+	  var(--rotate)
+	  , #06bdeb, #082da5 43%, #bdbdbd);
+	  opacity: 1;
+  }
+  #card3::before{
+	background-image: linear-gradient(
+		var(--rotate)
+		, #06bdeb, #082da5 43%, #bdbdbd);
+  }
+  #card3::after{
+	background-image: linear-gradient(
+	  var(--rotate)
+	  , #06bdeb, #082da5 43%, #bdbdbd);
+	  opacity: 1;
+  }
+  #card4::before{
+	background-image: linear-gradient(
+		var(--rotate)
+		, #06bdeb, #082da5 43%, #bdbdbd);
+  }
+  #card4::after{
+	background-image: linear-gradient(
+	  var(--rotate)
+	  , #06bdeb, #082da5 43%, #bdbdbd);
+	  opacity: 1;
   }
   .card::after {
 	position: absolute;
@@ -424,10 +465,6 @@ h3{
 	margin: 0 auto;
 	transform: scale(0.8);
 	filter: blur(calc(var(--card-height) / 6));
-	background-image: linear-gradient(
-	  var(--rotate)
-	  , #5ddcff, #3c67e3 43%, #4e00c2);
-	  opacity: 1;
 	transition: opacity .5s;
 	animation: spin 2.5s linear infinite;
 }
