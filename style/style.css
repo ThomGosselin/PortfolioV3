@@ -434,23 +434,23 @@ h3{
   #card3::before{
 	background-image: linear-gradient(
 		var(--rotate)
-		, #06bdeb, #082da5 43%, #bdbdbd);
+		, #480069, #8000e9 43%, #bdbdbd);
   }
   #card3::after{
 	background-image: linear-gradient(
 	  var(--rotate)
-	  , #06bdeb, #082da5 43%, #bdbdbd);
+	  , #480069, #8000e9 43%, #bdbdbd);
 	  opacity: 1;
   }
   #card4::before{
 	background-image: linear-gradient(
 		var(--rotate)
-		, #06bdeb, #082da5 43%, #bdbdbd);
+		, #f72500, #f34d00 43%, #bdbdbd);
   }
   #card4::after{
 	background-image: linear-gradient(
 	  var(--rotate)
-	  , #06bdeb, #082da5 43%, #bdbdbd);
+	  , #f72500, #f34d00 43%, #bdbdbd);
 	  opacity: 1;
   }
   .card::after {
