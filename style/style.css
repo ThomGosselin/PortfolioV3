@@ -21,7 +21,7 @@
   padding: 0; 
 }
 html{
-  cursor:none;
+  /*cursor:none;*/
 }
 body{
   background: var(--black);
@@ -484,7 +484,7 @@ h3{
 	background-color: blue;
   }
   .containerDayNightBtn.white {
-	background-color: white;
+	background-color: blue;
   }
   
   .icon {
@@ -495,7 +495,7 @@ h3{
 	height: 200px;
   }
   .containerDayNightBtn.black .icon {
-	border: white solid 2px;
+	border: blue solid 2px;
   }
   .containerDayNightBtn.white .icon {
 	border: blue solid 2px;
