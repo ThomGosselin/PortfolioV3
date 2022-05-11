@@ -20,9 +20,6 @@
   margin: 0;
   padding: 0; 
 }
-html{
-  /*cursor:none;*/
-}
 body{
   background: var(--black);
   margin: 0;font-family: "Source Sans Pro",sans-serif;
@@ -31,42 +28,7 @@ body{
   text-align: center;
 }
 /* ----- Curseur ----- */
-.cursor {
-	position: absolute;
-	background: #fff;
-	width: 6px; height: 6px;
-	border-radius: 100%;
-	z-index:10000;
-	transform: scale(1);
-	pointer-events: none;
-	user-select: none;
-	transition: 0.3s ease-in-out trasform, 0.2s ease-in-out opacity;
-}
-.cursor.active{
-	opacity: 0.5;
-		transform: scale(0);
-}
-.cursor:hover{
-	opacity: 0.08;
-}
-.cursor-follower {
-	position: absolute;
-	background: rgba(255,255,255,0.3);
-	width: 20px;height: 20px;
-	border-radius: 100%;
-	z-index: 10000;
-	transform: translate(5px, 5px);
-	user-select: none;
-	pointer-events: none;
-	transition: 0.6s ease-in-out trasform, 0.2s ease-in-out opacity;
-}
-.cursor-follower.active{
-	opacity:0.7;
-	transform: scale(3);
-}
-.cursor-follower.hover{
-	opacity:0.08;
-}
+
 /*Header section*/
 .nav-but-wrap{ 
 	position: relative;
@@ -82,7 +44,7 @@ body{
 	width: 30px;
 	position: relative;
 	z-index: 2;
-	cursor: none;
+	/*cursor: none;*/
 	display: block;
 }
 .menu-icon__line {
@@ -91,7 +53,7 @@ body{
 	display: block;
 	background-color: #fff;
 	margin-bottom: 7px;
-	cursor: none;
+	/*cursor: none;*/
 	-webkit-transition: background-color .5s ease, -webkit-transform .2s ease;
 	transition: background-color .5s ease, -webkit-transform .2s ease;
 	transition: transform .2s ease, background-color .5s ease;
@@ -185,7 +147,7 @@ body{
 	text-decoration: none;
 	color: var(--LightGray);
 	overflow: hidden; 
-	cursor: none;
+	cursor: pointer;
 	font-family: 'Poppins', sans-serif;
 	font-weight: 600;
 	z-index: 2;
@@ -468,42 +430,6 @@ h3{
 	transition: opacity .5s;
 	animation: spin 2.5s linear infinite;
 }
-/* Dark-Light Mode Btn*/
-.containerDayNightBtn {
-	position: relative;
-	left: 0;
-	top: 0;
-	width: 100vw;
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	transition: 0.3s;
-  }
-  .containerDayNightBtn.black {
-	background-color: blue;
-  }
-  .containerDayNightBtn.white {
-	background-color: blue;
-  }
-  
-  .icon {
-	border-radius: 30px;
-	transition: 0.3s;
-	cursor: pointer;
-	width: 200px;
-	height: 200px;
-  }
-  .containerDayNightBtn.black .icon {
-	border: blue solid 2px;
-  }
-  .containerDayNightBtn.white .icon {
-	border: blue solid 2px;
-  }
-  
-  #svg-animation {
-	width: 200px;
-  }
 /*Animation*/
 @keyframes typing {
 	from {
