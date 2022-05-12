@@ -44,7 +44,7 @@ body{
 	width: 30px;
 	position: relative;
 	z-index: 2;
-	/*cursor: none;*/
+	cursor: pointer;
 	display: block;
 }
 .menu-icon__line {
@@ -53,7 +53,7 @@ body{
 	display: block;
 	background-color: #fff;
 	margin-bottom: 7px;
-	/*cursor: none;*/
+	cursor: pointer;
 	-webkit-transition: background-color .5s ease, -webkit-transform .2s ease;
 	transition: background-color .5s ease, -webkit-transform .2s ease;
 	transition: transform .2s ease, background-color .5s ease;
@@ -349,10 +349,10 @@ h3{
 	display: flex;
 	font-size: 1.5em;
 	color: rgb(88 199 250 / 0%);
-	cursor: none;
+	cursor: pointer;
 	margin: 100px 15px 0 15px;
   }
-  .card:hover {
+  .card :hover {
 	color: rgb(88 199 250 / 100%);
 	transition: color 1s;
   }
@@ -371,10 +371,18 @@ h3{
 	  left: -2%;
 	  animation: spin 2.5s linear infinite;
   }
+  .card a{
+	  text-decoration: none;
+	  color: var(--blue);
+  }
   #card1::before{
 	background-image: linear-gradient(
 		var(--rotate)
 		, #06eb25, #02490e 43%, #bdbdbd);
+  }
+  #card1:hover:before, #card1:hover:after{
+	animation: none;
+	opacity: 0;
   }
   #card1::after{
 	background-image: linear-gradient(
@@ -387,6 +395,10 @@ h3{
 		var(--rotate)
 		, #06bdeb, #082da5 43%, #bdbdbd);
   }
+  #card2:hover:before, #card2:hover:after{
+	animation: none;
+	opacity: 0;
+  }
   #card2::after{
 	background-image: linear-gradient(
 	  var(--rotate)
@@ -398,6 +410,10 @@ h3{
 		var(--rotate)
 		, #480069, #8000e9 43%, #bdbdbd);
   }
+  #card3:hover:before, #card3:hover:after{
+	animation: none;
+	opacity: 0;
+  }
   #card3::after{
 	background-image: linear-gradient(
 	  var(--rotate)
@@ -408,6 +424,10 @@ h3{
 	background-image: linear-gradient(
 		var(--rotate)
 		, #f72500, #f34d00 43%, #bdbdbd);
+  }
+  #card4:hover:before, #card4:hover:after{
+	animation: none;
+	opacity: 0;
   }
   #card4::after{
 	background-image: linear-gradient(
