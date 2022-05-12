@@ -1,0 +1,20 @@
+{
+  "name": "portfoliov3",
+  "version": "1.0.0",
+  "description": "Currently working on a new version of my portfolio, to fit with the 2022 trends and the end of my Studies\r PortFolio- Thomas Gosselin 2022 edition",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThomGosselin/PortfolioV3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThomGosselin/PortfolioV3/issues"
+  },
+  "homepage": "https://github.com/ThomGosselin/PortfolioV3#readme"
+}
