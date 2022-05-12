@@ -372,8 +372,13 @@ h3{
 	  animation: spin 2.5s linear infinite;
   }
   .card a{
-	  text-decoration: none;
+	  align-items: center;
 	  color: var(--blue);
+	  display: flex;
+	  justify-content: center;
+	  height: var(--card-height);
+	  text-decoration: none;
+	  width: var(--card-width);
   }
   #card1::before{
 	background-image: linear-gradient(
