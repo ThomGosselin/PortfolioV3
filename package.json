@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/ThomGosselin/PortfolioV3/issues"
   },
-  "homepage": "https://github.com/ThomGosselin/PortfolioV3#readme"
+  "homepage": "https://github.com/ThomGosselin/PortfolioV3#readme",
+  "devDependencies": {
+    "sass": "^1.51.0"
+  }
 }
