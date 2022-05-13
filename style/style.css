@@ -474,6 +474,15 @@
   overflow: hidden;
   backdrop-filter: blur(25px);
 }
+.cardContainer{
+    break-after: avoid;
+    column-count: 2;
+    column-gap: 50px;
+    column-width:750px;
+    
+    height:100%;
+    width: 100%;
+}
   .cardProject{
     color: var(--white);
     background-size: cover;
