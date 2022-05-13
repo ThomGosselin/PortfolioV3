@@ -454,6 +454,24 @@
       animation: spin 2.5s linear infinite;
   }
   /*Project card */
+  .containerReal{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  z-index: 1000;
+  width: 100%;
+  max-width: 2000px;
+  padding:50px;
+  background: rgba(255,255,255,0.1);
+  box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-right: 1px solid rgba(255,255,255,0.1);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  backdrop-filter: blur(25px);
+}
   .cardProject{
     color: var(--white);
     background-size: cover;
