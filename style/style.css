@@ -1,3 +1,8 @@
+@property --rotate {
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
+  }
 :root{ 
     --black: #000;
     --blue:#016AAC;
@@ -383,9 +388,6 @@
     #card1:hover:before, #card1:hover:after{
       animation: none;
       opacity: 0;
-    }
-    #card1{
-        /**/
     }
     #card1::after{
       background-image: linear-gradient(
