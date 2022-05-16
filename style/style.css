@@ -3,6 +3,7 @@
     initial-value: 132deg;
     inherits: false;
   }
+
 :root{ 
     --BgColor: #020c1b;
     --blue:#016AAC;
@@ -23,7 +24,8 @@
   }
   body{
     background: var(--BgColor);
-    margin: 0;font-family: "Source Sans Pro",sans-serif;
+    margin: 0;
+    font-family: "Source Sans Pro",sans-serif;
     min-height:100vh;
     place-content: center;
     text-align: center;

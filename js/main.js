@@ -17,5 +17,5 @@ var app = function () {
         if (element.classList.contains(stringClass)) element.classList.remove(stringClass);else element.classList.add(stringClass);
     };
     init();
-}();
-
+}
+();
