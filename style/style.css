@@ -294,28 +294,6 @@
     display: flex;
     justify-content: center;
   }
-  .showcase {
-    height: 100vh;
-    position: relative;
-    width: 100%;
-  }
-  .showcase video {
-    height: 100%;
-    left: 0;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    width: 99%;
-  }
-  .title {
-    background-color: var(--black);
-    color: #fff;
-    font-size: 100px;
-    height: 100%;
-    mix-blend-mode: multiply;
-    pointer-events: none;
-    width: 100%;
-  }
   .typing {
       color:var(--white);
       width: 22ch;
