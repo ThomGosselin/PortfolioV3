@@ -303,6 +303,37 @@
     font-size: 100px;
     padding: 30px;
  }
+ h1.glitch::before, h1.glitch::after{
+  padding: 30px;
+  color: white;
+  content: "Thomas Gosselin";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: black;
+  overflow: hidden;
+  top: 0;
+ }
+  h1.glitch::before{
+    left: 3px;
+    text-shadow: -2px 0 red;
+    animation-name: glitch-animation-1;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse-alternate;
+  }
+  h1.glitch::after{
+    left: -3px;
+    text-shadow: -2px 0 blue;
+    animation-name: glitch-animation-2;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse-alternate;
+  }
   /* Text avec animation d'écriture au clavier */ 
   .typing {
       color:var(--white);
@@ -563,16 +594,105 @@ transition-delay: 500ms;
       }
     }
         
-    @keyframes blink {
-      50% {
-        border-color: transparent
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+  @keyframes spin {
+      0% {
+        --rotate: 0deg;
+      }
+      100% {
+        --rotate: 360deg;
       }
     }
-    @keyframes spin {
-        0% {
-          --rotate: 0deg;
-        }
-        100% {
-          --rotate: 360deg;
-        }
-      }
+    /* Animation de glitch */
+    @keyframes glitch-animation-1 {
+      0% {
+        clip: rect(27px, 1000px, 61px, 20px); }
+      5% {
+        clip: rect(69px, 1000px, 57px, 20px); }
+      10% {
+        clip: rect(86px, 1000px, 65px, 20px); }
+      15% {
+        clip: rect(75px, 1000px, 31px, 20px); }
+      20% {
+        clip: rect(7px, 1000px, 69px, 20px); }
+      25% {
+        clip: rect(104px, 1000px, 36px, 20px); }
+      30% {
+        clip: rect(149px, 1000px, 44px, 20px); }
+      35% {
+        clip: rect(63px, 1000px, 91px, 20px); }
+      40% {
+        clip: rect(71px, 1000px, 106px, 20px); }
+      45% {
+        clip: rect(87px, 1000px, 103px, 20px); }
+      50% {
+        clip: rect(108px, 1000px, 35px, 20px); }
+      55% {
+        clip: rect(92px, 1000px, 23px, 20px); }
+      60% {
+        clip: rect(21px, 1000px, 42px, 20px); }
+      65% {
+        clip: rect(113px, 1000px, 52px, 20px); }
+      70% {
+        clip: rect(56px, 1000px, 7px, 20px); }
+      75% {
+        clip: rect(116px, 1000px, 49px, 20px); }
+      80% {
+        clip: rect(95px, 1000px, 45px, 20px); }
+      85% {
+        clip: rect(55px, 1000px, 137px, 20px); }
+      90% {
+        clip: rect(114px, 1000px, 19px, 20px); }
+      95% {
+        clip: rect(70px, 1000px, 124px, 20px); }
+      100% {
+        clip: rect(62px, 1000px, 27px, 20px); } 
+  }
+  @keyframes glitch-animation-2 {
+    0% {
+      clip: rect(82px, 1000px, 104px, 20px); }
+    5% {
+      clip: rect(7px, 1000px, 56px, 20px); }
+    10% {
+      clip: rect(33px, 1000px, 40px, 20px); }
+    15% {
+      clip: rect(145px, 1000px, 16px, 20px); }
+    20% {
+      clip: rect(143px, 1000px, 121px, 20px); }
+    25% {
+      clip: rect(77px, 1000px, 82px, 20px); }
+    30% {
+      clip: rect(85px, 1000px, 65px, 20px); }
+    35% {
+      clip: rect(18px, 1000px, 54px, 20px); }
+    40% {
+      clip: rect(23px, 1000px, 81px, 20px); }
+    45% {
+      clip: rect(78px, 1000px, 24px, 20px); }
+    50% {
+      clip: rect(6px, 1000px, 129px, 20px); }
+    55% {
+      clip: rect(90px, 1000px, 27px, 20px); }
+    60% {
+      clip: rect(4px, 1000px, 49px, 20px); }
+    65% {
+      clip: rect(42px, 1000px, 127px, 20px); }
+    70% {
+      clip: rect(103px, 1000px, 11px, 20px); }
+    75% {
+      clip: rect(103px, 1000px, 148px, 20px); }
+    80% {
+      clip: rect(124px, 1000px, 76px, 20px); }
+    85% {
+      clip: rect(85px, 1000px, 17px, 20px); }
+    90% {
+      clip: rect(44px, 1000px, 90px, 20px); }
+    95% {
+      clip: rect(35px, 1000px, 40px, 30px); }
+    100% {
+      clip: rect(134px, 1000px, 45px, 30px); } }
+    
