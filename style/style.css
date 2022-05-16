@@ -4,8 +4,9 @@
     inherits: false;
   }
 :root{ 
-    --black: #000;
+    --BgColor: #020c1b;
     --blue:#016AAC;
+    --green: #64ffda;
     --LightGray: #BEBEBE;
     --hightlightText: #0883DB;
     --white: #fff;
@@ -21,7 +22,7 @@
     padding: 0; 
   }
   body{
-    background: var(--black);
+    background: var(--BgColor);
     margin: 0;font-family: "Source Sans Pro",sans-serif;
     min-height:100vh;
     place-content: center;
@@ -282,7 +283,7 @@
   /* Main Section */
   section:first-of-type{
     align-items: center;
-    background-color: var(--black);
+    background-color: var(--BgColor);
     display: flex;
     font-family: 'Poppins', sans-serif;
     gap: 20px;
@@ -310,7 +311,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background: black;
+  background: var(--BgColor);
   overflow: hidden;
   top: 0;
  }
@@ -326,7 +327,7 @@
   }
   h1.glitch::after{
     left: -3px;
-    text-shadow: -2px 0 blue;
+    text-shadow: -2px 0 var(--green);
     animation-name: glitch-animation-2;
     animation-duration: 4s;
     animation-timing-function: linear;
