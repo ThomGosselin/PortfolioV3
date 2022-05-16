@@ -294,6 +294,16 @@
     display: flex;
     justify-content: center;
   }
+  /* Text avec effet glitch */
+  h1.glitch{
+    color: white;
+    font-family: sans-serif;
+    font-weight: 800;
+    position: relative;
+    font-size: 100px;
+    padding: 30px;
+ }
+  /* Text avec animation d'écriture au clavier */ 
   .typing {
       color:var(--white);
       width: 22ch;
