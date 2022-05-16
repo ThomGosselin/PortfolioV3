@@ -52,7 +52,7 @@
       height: 2px;
       width: 30px;
       display: block;
-      background-color: #fff;
+      background-color: var(--white);
       margin-bottom: 7px;
       cursor: pointer;
       -webkit-transition: background-color .5s ease, -webkit-transform .2s ease;
@@ -128,7 +128,7 @@
             transition-delay: 0.8s;
       opacity: 0;
       text-align: left;
-      color: #fff;
+      color: var(--white);
       overflow: hidden; 
       font-family: 'Poppins', sans-serif;
       font-size: 22px;
@@ -192,7 +192,7 @@
       visibility: visible;
   }
   body.nav-active .menu-icon__line {
-      background-color: #fff;
+      background-color: var(--white);
       -webkit-transform: translate(0px, 0px) rotate(-45deg);
             transform: translate(0px, 0px) rotate(-45deg);
   }
@@ -590,7 +590,7 @@ transition-delay: 500ms;
 /* Section sur les bulles des réseux sociaux */
 .wrapper .icon {
   position: relative;
-  background: #ffffff;
+  background: var(--white);
   border-radius: 50%;
   padding: 15px;
   margin: 10px;
@@ -610,8 +610,8 @@ transition-delay: 500ms;
   position: absolute;
   top: 0;
   font-size: 14px;
-  background: #ffffff;
-  color: #ffffff;
+  background: var(--white);
+  color: var(--white);
   padding: 5px 8px;
   border-radius: 5px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
@@ -625,7 +625,7 @@ transition-delay: 500ms;
   content: "";
   height: 8px;
   width: 8px;
-  background: #ffffff;
+  background: var(--white);
   bottom: -3px;
   left: 50%;
   transform: translate(-50%) rotate(45deg);
@@ -648,35 +648,35 @@ transition-delay: 500ms;
 .wrapper .facebook:hover .tooltip,
 .wrapper .facebook:hover .tooltip::before {
   background: #1877F2;
-  color: #ffffff;
+  color: var(--white);
 }
 
 .wrapper .twitter:hover,
 .wrapper .twitter:hover .tooltip,
 .wrapper .twitter:hover .tooltip::before {
   background: #1DA1F2;
-  color: #ffffff;
+  color: var(--white);
 }
 
 .wrapper .instagram:hover,
 .wrapper .instagram:hover .tooltip,
 .wrapper .instagram:hover .tooltip::before {
   background: #E4405F;
-  color: #ffffff;
+  color: var(--white);
 }
 
 .wrapper .github:hover,
 .wrapper .github:hover .tooltip,
 .wrapper .github:hover .tooltip::before {
   background: #333333;
-  color: #ffffff;
+  color: var(--white);
 }
 
 .wrapper .youtube:hover,
 .wrapper .youtube:hover .tooltip,
 .wrapper .youtube:hover .tooltip::before {
   background: #CD201F;
-  color: #ffffff;
+  color: var(--white);
 }
 
   /*Animation*/
