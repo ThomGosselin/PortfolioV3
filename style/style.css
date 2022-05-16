@@ -588,6 +588,7 @@ transition-delay: 500ms;
 }
 
   /*Animation*/
+  /* Animation des cartes des catégories */
   @keyframes typing {
       from {
         width: 0
@@ -599,6 +600,7 @@ transition-delay: 500ms;
       border-color: transparent
     }
   }
+  /*Animation des cartes des catégories */
   @keyframes spin {
       0% {
         --rotate: 0deg;
@@ -696,3 +698,4 @@ transition-delay: 500ms;
     100% {
       clip: rect(134px, 1000px, 45px, 30px); } }
     
+      /*Responsive Section*/
