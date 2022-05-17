@@ -776,10 +776,9 @@ transition-delay: 500ms;
       clip: rect(134px, 1000px, 45px, 30px); } }
 /*Formulaire de contact */
 #contact {
-  width: 100%;
+  width: 100vw;
   height: 100%;
 }
-
 .section-header {
   text-align: center;
   margin: 0 auto;
@@ -797,7 +796,7 @@ transition-delay: 500ms;
   margin: 0 auto;
   padding: 20px;
   position: relative;
-  max-width: 840px;
+  max-width: 1280px;
 }
 
 /* Left contact page */
