@@ -342,8 +342,8 @@
   /* Text avec animation d'écriture au clavier */ 
   .typing {
       color:var(--white);
-      width: 22ch;
-      animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+      width: 26ch;
+      animation: typing 2s steps(26), blink .5s step-end infinite alternate;
       white-space: nowrap;
       overflow: hidden;
       border-right: 3px solid;
