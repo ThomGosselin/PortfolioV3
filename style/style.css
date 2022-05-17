@@ -1,3 +1,5 @@
+/*Imports section*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 @property --rotate {
     syntax: "<angle>";
     initial-value: 132deg;
@@ -775,154 +777,44 @@ transition-delay: 500ms;
     100% {
       clip: rect(134px, 1000px, 45px, 30px); } }
 /*Formulaire de contact */
-#contact {
-  width: 100vw;
-  height: 100%;
-}
-.section-header {
-  text-align: center;
-  margin: 0 auto;
-  padding: 40px 0;
-  font: 300 60px 'Oswald', sans-serif;
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 6px;
-}
-
-.contact-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 0 auto;
-  padding: 20px;
-  position: relative;
-  max-width: 1280px;
+.feedback-input {
+  color:white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid var(--green);
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
 }
 
-/* Left contact page */
-.form-horizontal {
-  /*float: left;*/
-  max-width: 400px;
-  font-family: 'Lato';
-  font-weight: 400;
-}
+.feedback-input:focus { border:2px solid var(--green); }
 
-.form-control, 
 textarea {
-  max-width: 400px;
-  background-color: var(--BgColor);
-  color: #fff;
-  letter-spacing: 1px;
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
 }
 
-.send-button {
-  margin-top: 15px;
-  height: 34px;
-  width: 400px;
-  overflow: hidden;
-  transition: all .2s ease-in-out;
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:var(--green);
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
 }
-
-.alt-send-button {
-  width: 400px;
-  height: 34px;
-  transition: all .2s ease-in-out;
-}
-
-.send-text {
-  display: block;
-  margin-top: 10px;
-  font: 700 12px 'Lato', sans-serif;
-  letter-spacing: 2px;
-}
-
-.alt-send-button:hover {
-  transform: translate3d(0px, -29px, 0px);
-}
-
-/* Begin Right Contact Page */
-.direct-contact-container {
-  max-width: 400px;
-}
-
-/* Location, Phone, Email Section */
-.contact-list {
-  list-style-type: none;
-  margin-left: -30px;
-  padding-right: 20px;
-}
-
-.list-item {
-  line-height: 4;
-  color: var(--white);
-}
-
-.contact-text {
-  font: 300 18px 'Lato', sans-serif;
-  letter-spacing: 1.9px;
-  color: var(--white);
-}
-
-.place {
-  margin-left: 62px;
-}
-
-.phone {
-  margin-left: 56px;
-}
-
-.gmail {
-  margin-left: 53px;
-}
-
-.contact-text a {
-  color: var(--white);
-  text-decoration: none;
-  transition-duration: 0.2s;
-}
-
-.contact-text a:hover {
-  color: var(--green);
-  text-decoration: none;
-}
-/*Responsive Section*/
-@media screen and (max-width: 850px) {
-  .contact-wrapper {
-    display: flex;
-    flex-direction: column;
-  }
-  .direct-contact-container, .form-horizontal {
-    margin: 0 auto;
-  }  
-  
-  .direct-contact-container {
-    margin-top: 60px;
-    max-width: 300px;
-  }    
-}
-@media screen and (max-width: 569px) {
-
-  .direct-contact-container, .form-wrapper {
-    float: none;
-    margin: 0 auto;
-  }  
-  .form-control, textarea {
-    
-    margin: 0 auto;
-  }
- 
-  
-  .name, .email, textarea {
-    width: 280px;
-  } 
-  
-  .direct-contact-container {
-    margin-top: 60px;
-    max-width: 280px;
-  }    
-}
-@media screen and (max-width: 410px) {
-  .send-button {
-    width: 99%;
-  }
-}
+[type="submit"]:hover { background:var(--blue); }
