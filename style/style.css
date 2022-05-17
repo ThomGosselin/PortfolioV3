@@ -479,7 +479,7 @@
   }
   /*Project card */
 .cardContainer{
-    height:78vh;
+    height:80vh;
     width: 100vw;
     display: flex;
     flex-wrap: wrap;
@@ -495,6 +495,7 @@
     overflow: hidden;
     transition: transform 500ms ease;
     flex-basis:22%;
+    margin-top:15px;
 }
 
 .projectContent{
