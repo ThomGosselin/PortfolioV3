@@ -14,7 +14,7 @@
     --hightlightText: #0883DB;
     --white: #fff;
     --typewriterSpeed: 6s;
-    --typewriterCharacters: 22;
+    --typewriterCharacters: 25;
     --card-height: 65vh;
     --card-width: calc(var(--card-height) / 2);
   }
@@ -665,6 +665,58 @@ transition-delay: 500ms;
   background: #CD201F;
   color: var(--white);
 }
+/*Formulaire de contact */
+.feedback-input {
+  color:white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid var(--blue);
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid var(--blue); }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:var(--blue);
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:var(--green); }
+.white{
+  color:var(--white);
+}
+.white:first-of-type{
+  margin-top:25px;
+}
+.white a{
+  text-decoration: none;
+  color: var(--white);
+}
 
   /*Animation*/
   /* Animation des cartes des catégories */
@@ -776,56 +828,5 @@ transition-delay: 500ms;
       clip: rect(35px, 1000px, 40px, 30px); }
     100% {
       clip: rect(134px, 1000px, 45px, 30px); } }
-/*Formulaire de contact */
-.feedback-input {
-  color:white;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight:500;
-  font-size: 18px;
-  border-radius: 5px;
-  line-height: 22px;
-  background-color: transparent;
-  border:2px solid var(--blue);
-  transition: all 0.3s;
-  padding: 13px;
-  margin-bottom: 15px;
-  width:100%;
-  box-sizing: border-box;
-  outline:0;
-}
 
-.feedback-input:focus { border:2px solid var(--blue); }
-
-textarea {
-  height: 150px;
-  line-height: 150%;
-  resize:vertical;
-}
-
-[type="submit"] {
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-  width: 100%;
-  background:var(--blue);
-  border-radius:5px;
-  border:0;
-  cursor:pointer;
-  color:white;
-  font-size:24px;
-  padding-top:10px;
-  padding-bottom:10px;
-  transition: all 0.3s;
-  margin-top:-4px;
-  font-weight:700;
-}
-[type="submit"]:hover { background:var(--green); }
-.white{
-  color:var(--white);
-}
-.white:first-of-type{
-  margin-top:25px;
-}
-.white a{
-  text-decoration: none;
-  color: var(--white);
-}
 /* Section Responsive*/
