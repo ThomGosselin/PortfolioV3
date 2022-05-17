@@ -811,7 +811,7 @@ transition-delay: 500ms;
 .form-control, 
 textarea {
   max-width: 400px;
-  background-color: #000;
+  background-color: var(--BgColor);
   color: #fff;
   letter-spacing: 1px;
 }
@@ -929,21 +929,6 @@ textarea {
   box-shadow: 0 0 0 1px #fff;
   transition: all .2s ease-in-out;
 }
-
-.social-media-list li:hover {
-  background-color: #fff; 
-}
-
-.social-media-list li:hover:after {
-  opacity: 1;  
-  transform: scale(1.12);
-  transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
-}
-
-.social-media-list li:hover a {
-  color: #000;
-}
-
 .copyright {
   font: 200 14px 'Oswald', sans-serif;
   color: #555;
