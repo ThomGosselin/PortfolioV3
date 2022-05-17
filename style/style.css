@@ -482,10 +482,10 @@
   /*Project card */
 .cardContainer{
     height:80vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
   .cardProject{
     color: var(--white);
@@ -498,6 +498,7 @@
     transition: transform 500ms ease;
     flex-basis:22%;
     margin-top:15px;
+    margin-right: 15px;
 }
 
 .projectContent{
