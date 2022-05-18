@@ -914,7 +914,7 @@ textarea {
     border: 10px solid var(--white);
   }
 
-  .cv .close{
+  .CV .close{
     position: absolute;
     top:30px;
     right:30px;
