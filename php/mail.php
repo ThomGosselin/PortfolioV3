@@ -3,7 +3,7 @@
     $email= $_POST['email'];
     $message= $_POST['message'];
 
-    $email_from = 'alexiscegepmatane@gmail.com';
+    $email_from = $email;
 
     $email_subject = "Message du Portfolio";
 
