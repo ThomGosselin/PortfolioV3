@@ -909,7 +909,7 @@ textarea {
     transform: translate(-50%, -50%) scale(1);
   }
   .CV img{
-    max-width: 80%;
+    max-width: 38%;
     outline:none;
     border: 10px solid var(--white);
   }
