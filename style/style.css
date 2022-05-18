@@ -891,7 +891,7 @@ textarea {
     box-shadow: 0 0 0 150vh var(--blue);
     z-index: 100;
   }
-  .clip{
+  .CV{
     position: fixed;
     top:50%;
     left:50%;
@@ -901,14 +901,28 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1000;
+    z-index: 100;
     transition: 0.5s;
   }
-  .clip.active{
+  .CV.active{
+    transition-delay: 0.5s;
     transform: translate(-50%, -50%) scale(1);
   }
-  .clip img{
+  .CV img{
     max-width: 80%;
+    outline:none;
+    border: 10px solid var(--white);
+  }
+
+  .cv .close{
+    position: absolute;
+    top:30px;
+    right:30px;
+    cursor:pointer;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--white);
   }
 
   /*Animation*/
