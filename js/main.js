@@ -19,3 +19,11 @@ var app = function () {
     init();
 }
 ();
+
+let buttonCV = document.querySelector(".buttonCV");
+let clip = document.querySelector(".clip");
+buttonCV.onclick = function(){
+    buttonCV.classList.add('active');
+    clip.classList.add('active');
+
+}
