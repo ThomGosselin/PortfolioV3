@@ -791,7 +791,7 @@ textarea {
 /*Carte de présentation section a propos*/
 .Mecard{
   width: 100%;
-  overflow: hidden;
+  height:100vh;
   background-color: var(--BgColor);
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
 }
@@ -858,7 +858,30 @@ textarea {
     color: var(--white);
     margin: 20px 0;
   }
-  
+  /*Bouton pour mon CV*/
+  .buttonCV{
+  display:inline-block;
+  font-size:1.2em;
+  padding:1.2em 1.5em; 
+  font-family:Gill Sans, "Gill Sans", sans-serif;
+  font-weight:700;
+  letter-spacing:-1px;
+  text-transform:uppercase;
+  text-decoration:none;
+  margin:3em;
+  border:solid 2px var(--blue);
+  color:var(--blue);
+  border-radius:0.4em;
+  transition:all 0.3s linear;
+  animation-iteration-count: infinite;
+  animation-duration: 1.25s;
+   animation-name: jump;
+  }
+  .buttonCV:hover{
+    color:#ffffff;
+    background:var(--green);
+    animation:none;
+  }
   /*Animation*/
   /* Animation des cartes des catégories */
   @keyframes typing {
@@ -1008,6 +1031,25 @@ textarea {
       to{
         transform: translateX(-50%) rotate(360deg);
       }
+    }
+    /*Animation pour le bouton du CV*/
+    @keyframes jump {
+      0% {
+        transform: scale(1,1) translate(0px, 0px);
+      }
+      
+      30%{
+        transform: scale(1,0.8) translate(0px, 10px); 
+      }
+    
+      75%{
+        transform: scale(1,1.1) translate(0px, -25px); 
+      }
+      
+     100% {
+        transform: scale(1,1) translate(0px, 0px);
+      }
+    
     }
 
 /* Section Responsive*/
