@@ -1016,7 +1016,7 @@ card .card-header .profile-img{
       }
     }
     /*Animation wave de la page a porpos*/
-    @keyframes Wave{
+    @keyframes wave{
       to{
         transform: translateX(-50%) rotate(360deg);
       }
