@@ -790,9 +790,9 @@ textarea {
 
 /*Carte de présentation section a propos*/
 .Mecard{
-  width: 400px;
+  width: 100%;
   overflow: hidden;
-  background-color: #fff;
+  background-color: var(--BgColor);
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
 }
 
@@ -808,7 +808,7 @@ textarea {
 .Mecard .card-header .waves-container .wave{
   position: absolute;
   width: 650px; height: 650px;
-  background-image: linear-gradient(to bottom left, #8aafff, #5B86E5);
+  background-image: linear-gradient(to bottom left, var(--blue), var(--green));
   transform: translateX(-50%);
 }
 
@@ -831,7 +831,7 @@ textarea {
   opacity: 0.2;
   animation: wave 16s linear infinite;
 }
-card .card-header .profile-img{
+.Mecard .card-header .profile-img{
   margin: 0 auto;
   width: 150px; height: 150px;
   object-fit:cover; /* to maintain the aspect ratio of the image */
@@ -849,28 +849,16 @@ card .card-header .profile-img{
   
   .Mecard .card-body h2{
     text-transform: capitalize;
-    color: rgb(82,82,82);
+    color: var(--white)
   }
   
   .Mecard .card-body p{
-    font-size: 14px;
+    font-size: 20px;
     line-height: 1.8;
-    color: rgba(82,82,82,0.6);
+    color: var(--white);
     margin: 20px 0;
   }
   
-  .Mecard .card-body .btn{
-    display: inline-block;
-    text-decoration: none;
-    padding: 15px 45px;
-    color: #fff;
-    background-color: #5B86E5;
-    border-radius: 100px;
-    text-transform: uppercase;
-    margin:20px 0 40px;
-    font-weight: 600;
-    letter-spacing: 1px;
-  }
   /*Animation*/
   /* Animation des cartes des catégories */
   @keyframes typing {
