@@ -32,6 +32,7 @@
     place-content: center;
     text-align: center;
   }
+  
   /* ----- Curseur ----- */
   
   /*Header section*/
@@ -673,7 +674,10 @@ a.animatedButton span:nth-child(4){
   cursor: pointer;
   transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-
+li.icon a span ion-icon{
+  text-decoration: none;
+  color:black;
+}
 .wrapper .tooltip {
   position: absolute;
   top: 0;
