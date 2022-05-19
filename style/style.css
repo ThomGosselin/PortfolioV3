@@ -726,10 +726,10 @@ a.animatedButton span:nth-child(4){
   color: var(--white);
 }
 
-.wrapper .instagram:hover,
-.wrapper .instagram:hover .tooltip,
-.wrapper .instagram:hover .tooltip::before {
-  background: #E4405F;
+.wrapper .gitlab:hover,
+.wrapper .gitlab:hover .tooltip,
+.wrapper .gitlab:hover .tooltip::before {
+  background: #e64b03;
   color: var(--white);
 }
 
