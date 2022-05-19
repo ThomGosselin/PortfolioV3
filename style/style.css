@@ -15,7 +15,7 @@
     --white: #fff;
     --typewriterSpeed: 6s;
     --typewriterCharacters: 25;
-    --card-height: 65vh;
+    --card-height: 75vh;
     --card-width: calc(var(--card-height) / 2);
   }
   
@@ -803,7 +803,7 @@ textarea {
 /*Carte de présentation section a propos*/
 .Mecard{
   width: 100%;
-  height:100vh;
+  height:65vh;
   background-color: var(--BgColor);
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
   padding: 0 15px;
@@ -938,6 +938,14 @@ textarea {
     color: var(--white);
   }
 
+  footer{
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    align-content: flex-end;
+    padding-top:30vh;
+  }
 
   /*Animation*/
   /* Animation des cartes des catégories */
