@@ -644,7 +644,19 @@ a.animatedButton span:nth-child(4){
 }
 
 /* Section sur les bulles des réseux sociaux */
-.wrapper .icon {
+.mediaButton{
+  display: grid;
+  display: grid;
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  place-items: center;
+} 
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+}
+.wrapper .icon{
   position: relative;
   background: var(--white);
   border-radius: 50%;
@@ -861,6 +873,7 @@ textarea {
   }
   /*Bouton pour mon CV*/
   .buttonCV{
+  cursor:pointer;
   display:inline-block;
   font-size:1.2em;
   padding:1.2em 1.5em; 
@@ -924,6 +937,7 @@ textarea {
     text-transform: uppercase;
     color: var(--white);
   }
+
 
   /*Animation*/
   /* Animation des cartes des catégories */
